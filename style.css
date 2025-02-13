@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #F6D1D8;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6D1D8;
+  border-right: 0px solid #D1193E;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.heart {
+  position: relative;
+}
+.heart,
+.heart:before,
+.heart:after {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #D1193E;
+  transform: rotateZ(45deg);
+}
+.heart:before,
+.heart:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+.heart:before {
+  transform: translateX(-50%);
+  -webkit-animation: animX 1.5s infinite 0.25s;
+          animation: animX 1.5s infinite 0.25s;
+}
+.heart:after {
+  transform: translateY(-50%);
+  -webkit-animation: animY 1.5s infinite;
+          animation: animY 1.5s infinite;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #F4B6C2;
+  padding: 20px;
+  max-width: 600px;
+  width: calc(100% - 40px);
+  border-radius: 20px;
+}
+
+h1 {
+  color: #D1193E;
+  margin-bottom: 20px;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 50px;
+}
+
+#yes-btn {
+  background-color: #D1193E;
+  color: white;
+  width: calc(100% - 100px);
+}
+
+#yes-btn:hover {
+  background-color: #A10E2B;
+}
+
+#no-btn {
+  background-color: #F6D1D8;
+  color: #D1193E;
+  border: 2px solid #D1193E;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+}
+
+#no-btn:hover {
+  background-color: #F4B6C2;
+}
+
+@keyframes animX {
+  0%, 25% {
+    transform: translateX(-50%);
+  }
+  50%, 75% {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes animY {
+  0%, 25% {
+    transform: translateY(-50%);
+  }
+  50%, 75% {
+    transform: translateY(50%);
+  }
+}
