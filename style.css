@@ -1,4 +1,8 @@
+/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* Imports */
+/* Base Styling */
 
 * {
   margin: 0;
@@ -55,6 +59,9 @@ body {
   -webkit-animation: animY 1.5s infinite;
           animation: animY 1.5s infinite;
 }
+
+/* Base Styling */
+/* Main Styling */
 
 .container {
   position: absolute;
@@ -115,6 +122,9 @@ button {
   background-color: #F4B6C2;
 }
 
+/* Main Styling */
+/* Animation */
+
 @keyframes animX {
   0%, 25% {
     transform: translateX(-50%);
@@ -132,3 +142,5 @@ button {
     transform: translateY(50%);
   }
 }
+
+/* Animation */
