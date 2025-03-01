@@ -1,3 +1,4 @@
+// Onload Functions
 window.addEventListener("load", function(){
     setTimeout(loaded, 2500);
       
@@ -7,8 +8,9 @@ window.addEventListener("load", function(){
            load.style.borderRight = "100px solid #D1193E";
           load.style.visibility = "hidden";
     }
-  });
+});
 
+// Main Functions 
 document.getElementById('yes-btn').addEventListener('click', function() {
   const question = document.getElementById('question');
   const gif = document.getElementById('image');
