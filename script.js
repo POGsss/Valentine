@@ -1,7 +1,5 @@
 // Global Variables
 let a;
-let b;
-let c;
 
 // Onload Functions
 window.addEventListener("load", function(){
