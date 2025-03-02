@@ -1,3 +1,6 @@
+// Global Variables
+let a;
+
 // Onload Functions
 window.addEventListener("load", function(){
     setTimeout(loaded, 2500);
